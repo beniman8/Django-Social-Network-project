@@ -27,9 +27,9 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 if DEBUG == True:
-    ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN')]
+    ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN'),'localhost']
 else:
-    ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN')]
+    ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN'),'localhost']
 
 
 # Application definition
