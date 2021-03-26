@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 if DEBUG == True:
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN')]
 else:
     ALLOWED_HOSTS = [config('SERVER_IP'), config('SERVER_DOMAIN')]
 
